@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <aside class="left-side">
+        <div class="nav-main">
+            <a href="#" class="active"><i class='bx bxs-home'></i>Home</a>
+            <a href="#"><i class='bx bx-search-alt-2'></i>Search</a>
+        </div>
+        <div class="left-elem">
+            <div class="left-link">
+                <a href="#" class="library"><i class='bx bx-library'></i>Your Library</a>
+                <a href="#" class="plus-icn"><i class='bx bxs-plus-circle'></i></a>
+            </div>
+            <div class="create-playlst">
+                <h3>Create your first playlist</h3>
+                <p>Its easy we will help you</p>
+                <a href="#" class="create-btn">Create playlist</a>
+            </div>
+            <div class="btm-links">
+                <a href="#">Legal</a>
+                <a href="#">Privacy Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+                <a href="#">AboutAds</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Cookies</a>
+            </div>        
+        </div>   
+    </aside>
+    
+</body>
+</html>

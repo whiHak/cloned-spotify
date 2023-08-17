@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #000;
+    margin-top: -5px;
+}
+
+.left-side{
+    width: 315px;
+    height: 570px;
+    float: left ;
+    margin: 10px 5px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.left-side .nav-main{
+    background-color: #161515;
+    padding: 20px;
+    border-radius : 5px;
+    overflow: hidden;
+}
+
+.left-side .nav-main a{
+    display:block;
+    font-size: 17px;
+    text-decoration: none;
+    color: #f7eded;
+    opacity: 0.4;
+    transition: .5s;
+}
+.left-side .nav-main a:nth-child(1){
+    margin-bottom: 15px;
+}
+.left-side .nav-main a i{
+    margin-right: 35px;
+    font-size: 26px;
+    width: 10px;
+}
+.left-side .nav-main a:hover,
+.left-side .nav-main .active{
+    color: #ffffff;
+    opacity: 1;
+}
+
+.left-elem{
+    background-color: #161515;
+    padding: 10px;
+    margin-top: 7px;
+    border-radius : 5px;
+    overflow: hidden; 
+    height: 90vh;
+}
+.left-elem .left-link{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.left-elem .left-link{
+    margin: 5px 0 14px 10px;
+}
+.left-elem .left-link a{  
+    font-size: 17px;
+    text-decoration: none;
+    color: #f7eded;
+    opacity: 0.4;
+    font-weight: 500;
+    transition: .5s;
+    
+}
+.left-elem .left-link a i{
+    margin-right: 5px;
+    font-size: 30px;
+}
+.left-elem .left-link a:hover{
+    color:#ffffff;
+    opacity: 1;
+}
+::-webkit-scrollbar{
+    width: 0.2em;
+    background: transparent;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: #888;
+    transition: 0.3s ease-in-out;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+.scroll-cntn{
+    background-color: #161515;
+    padding: 8px 10px 10px 3px;
+    height: 22vh;
+    color: #ffffff;
+    border-radius: 5px 5px 2px 2px;
+    overflow-y: scroll ;
+}
+
+.create-playlst{
+    background-color: #272626;
+    padding: 15px 0 20px 12px;
+    border-radius: 5px;
+}
+.create-playlst h3{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+}
+.create-playlst p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 5px 0 20px 5px;
+}
+.create-playlst .create-btn{
+    border-radius: 26px;
+    background-color: #ffffff;
+
+}
+.create-playlst a{
+    color: #000;
+    font-size: 14px;
+    padding: 6px 14px;   
+    font-weight: 600;
+    text-decoration: none;
+    margin: 10px 0 0 2px;
+    transition: .1s;
+}
+.create-playlst a:hover{
+    font-size: 14.5px;
+    padding: 6.1px 14.1px;
+    margin: 10px 0 0 1px;
+    border: 2px solid #ffffff;
+    color: #000;
+}
+.podcast{
+    background-color: #272626;
+    margin-top: 25px;
+    padding: 15px 0 20px 12px;
+
+}
+.podcast h3{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+}
+.podcast p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 5px 0 20px 5px;
+}
+.podcast .podcast-btn{
+    border-radius: 26px;
+    background-color: #ffffff;
+
+}
+.podcast a{
+    color: #000;
+    font-size: 14px;
+    padding: 6px 14px;   
+    font-weight: 600;
+    text-decoration: none;
+    margin: 10px 0 0 2px;
+    transition: .1s;
+}
+.podcast a:hover{
+    font-size: 14.5px;
+    padding: 6.1px 14.1px;
+    margin: 10px 0 0 1px;
+    border: 2px solid #ffffff;
+    color: #000;
+}
+
+.btm-links{
+    background-color: #161515;
+    align-items: flex-end;
+    padding: 28px 55px 30px 23px;
+
+}
+.btm-links a{
+    font-size: 10px;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+    color: #f7eded;
+    opacity: 0.4;
+}
+.left-elem a.eng {
+    background-color: #191414;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 23px;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 3px 13px;   
+    border: 1px solid #f7eded;
+    transition: .1s;
+    margin-left: 10px;
+}
+
+.left-elem .eng i{
+    font-size: 12px;
+}
+.left-elem a.eng:hover {
+    padding: 3.5px 13.5px;
+    font-size: 14.5px;
+    border: 2px solid #f7eded;
+    margin-left: 9px;
+}
+
+.top-cont{
+    position:relative;
+    top: 10px;
+    margin-right: 5px;
+    /* width: 760px; */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #161515;
+    border-radius: 5px 5px 0 0;
+    z-index: 0;  
+}
+.top-cont .fb-btn{
+    display: flex;
+    justify-items: center;
+    margin: 20px;
+}
+.fb-btn a.forward-btn, 
+ a.backward-btn{
+    display:inline-flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 100;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #f7eded;
+}
+
+.account-btn{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.account-btn a.sign-up-btn{
+    background-color: yellowgreen;
+    padding: 12px 15px;
+    border-radius: 10px;
+    background: transparent;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    opacity: 0.4;
+    transition: .2s;
+}
+a.sign-up-btn:hover{
+    color: #fff;
+    opacity: 1;
+    font-weight: 700;
+}
+.account-btn a.log-in-btn{
+    background-color: #ffffff;
+    padding: 10px 30px;
+    margin: 0 15px;
+    height: 45px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: .1s;
+}
+a.log-in-btn:hover{
+    padding: 10.3px 30.3px;
+    font-weight: 600;
+    background-color: #f7eded;
+}
+    /* right side styles */
+.right-side {
+    position: absolute;
+    left: 325px;
+    height: 510px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    border-radius: 0 0 5px 5px;
+}
+
+.main-page{
+    width: 100%; 
+    margin: 0 325px 5px 0;
+}
+.playlist{
+    height: 525px;
+}
+
+.playlist .head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #272626;
+    padding-bottom: 5px;
+}
+
+.playlist .head a:nth-child(1){
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    position: relative;
+    left: 10px;
+}
+.playlist .head a:nth-child(2){
+    position: relative;
+    top: 8px;
+    font-size: 13px;
+    right: 10px;
+    color: #ffffff;
+    opacity: .4;
+    text-decoration: none;
+}
+.playlist .head a:hover{
+    text-decoration:underline;
+}
+
+.card-board{
+}
+
+.card-board .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #272626;
+    overflow: hidden;
+    width: fit-content;
+    height: 325px;
+    /* overflow: scroll; */
+}
+.cards .figure, .figure-l{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    background: #161515;
+    margin: 20px 10px 20px 20px;
+    padding: 10px 0; 
+    width: 17%;
+    height: 245px;
+    border-radius: 5px;
+}
+.cards .figure figure, .figure-l figure{ 
+    margin-left: 10px;
+    size: 30px;
+    font-size: 13px;
+    height: 60%;
+    width: 85%;
+    z-index: 1;
+}
+.cards .figure img, .figure-l img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.cards a{
+    text-decoration: none;
+    color: #f7eded;
+}
+
+.cards figcaption p{
+    opacity: .4;
+}
+.figure .play-btn i, .figure-l .play-btn i{ 
+    display: none;
+    transition: all .50s ease;
+}
+
+.figure a:hover i, 
+.figure-l a:hover i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 90px;
+    bottom: 125px;
+    font-size: 48px;
+    width: 50px;
+    height: 50px;
+    color: #000;
+    background: rgb(102, 236, 102);
+    border-radius: 50px;
+    transform: translateY(-5px);
+
+}
+
+
+@media (max-width: 1329px){
+    .figure-l{
+        display: none;
+    }
+    .figure{
+        width: 21% !important;
+        height: 300px !important;
+    }
+    .figure img{
+
+    }
+}

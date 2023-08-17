@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left-side{
+    width: 23%;
+    height: 100%;
+    float: left ;
+    margin: 2px;
+    overflow: hidden;
+}
+.left-side .nav-main{
+    background-color: rgb(25, 20, 20);
+    padding: 15px;
+    border-radius : 5px;
+    overflow: hidden;
+}
+
+.left-side .nav-main a{
+    display:block;
+    justify-content: center;
+    font-size: 13px;
+    align-items: center;
+    text-decoration: none;
+    color: #f7eded;
+    opacity: 0.4;
+    transition: .5s;
+}
+.left-side .nav-main a:nth-child(1){
+    margin-bottom: 15px;
+}
+.left-side .nav-main a i{
+    margin-right: 20px;
+    font-size: 19px;
+    width: 10px;
+}
+.left-side .nav-main a:hover,
+.left-side .nav-main .active{
+    color: #ffffff;
+    opacity: 1;
+}
+
+.left-elem{
+    background-color: rgb(25, 20, 20);
+    padding: 10px;
+    margin-top: 2px;
+    border-radius : 5px;
+    overflow: hidden; 
+}
+.left-elem .left-link{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.left-elem .left-link{
+    margin-bottom: 10px;
+}
+.left-elem .left-link a{  
+    font-size: 12px;
+    text-decoration: none;
+    color: #f7eded;
+    opacity: 0.4;
+    font-weight: 500;
+    transition: .5s;
+    
+}
+.left-elem .left-link a i{
+    margin-right: 5px;
+    font-size: 17px;
+}
+.left-elem a:hover{
+    color:#ffffff;
+    opacity: 1;
+}
+.left-elem .create-playlst{
+    background: red;
+    padding: 15px 10px 10px 10px;
+    border-radius: 5px;
+}
+.left-elem .create-playlst h3{
+    font-size: 13px;
+    color: #ffffff;
+    padding: 5px;
+}
+.left-elem .create-playlst p{
+    font-size: 9px;
+    color: #ffffff;
+    padding: 5px;
+}
+.create-playlst .create-btn{
+    border-radius: 10px;
+    background-color: #ffffff;
+
+}
+.create-playlst a{
+    color: #000;
+    font-size: 10px;
+    padding: 5px 14px;   
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: .1s;
+}
+.create-playlst a:hover{
+    font-size: 10.3px;
+    padding: 5.3px 14.3px;
+    color: #000;
+}
+
+.btm-links{
+    display: flex;
+    justify-content: space-between;
+}
