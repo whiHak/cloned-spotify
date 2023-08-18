@@ -297,6 +297,8 @@ a.log-in-btn:hover{
     overflow-y:scroll;
     overflow-x: hidden;
     border-radius: 0 0 5px 5px;
+    width: auto;
+    background: #272626;
 }
 
 .main-page{
@@ -312,7 +314,7 @@ a.log-in-btn:hover{
     justify-content: space-between;
     width: 100%;
     background: #272626;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
 }
 
 .playlist .head a:nth-child(1){
@@ -320,7 +322,7 @@ a.log-in-btn:hover{
     text-decoration: none;
     font-size: 11px;
     position: relative;
-    left: 10px;
+    left: 25px;
 }
 .playlist .head a:nth-child(2){
     position: relative;
@@ -336,6 +338,7 @@ a.log-in-btn:hover{
 }
 
 .card-board{
+    height: 55vh;
 }
 
 .card-board .cards {
@@ -343,77 +346,89 @@ a.log-in-btn:hover{
     flex-wrap: wrap;
     flex-direction: row;
     background: #272626;
-    overflow: hidden;
-    width: fit-content;
-    height: 325px;
+    /* overflow: hidden; */
+    /* width: fit-content; */
+    height: 300px;
     /* overflow: scroll; */
 }
-.cards .figure, .figure-l{
+
+.cards .figure{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cards .figure a{
+    display: inline-flex;
     position: relative;
     top: 5px;
     left: 5px;
+    text-decoration: none;
+    color: #f7eded;
     background: #161515;
     margin: 20px 10px 20px 20px;
     padding: 10px 0; 
-    width: 17%;
-    height: 245px;
+    width: 20%;
+    height: 65%;
     border-radius: 5px;
+    transition: .3s;
+    overflow: hidden;
 }
-.cards .figure figure, .figure-l figure{ 
-    margin-left: 10px;
+.cards .figure figure{ 
+    margin-left: 15px;
     size: 30px;
     font-size: 13px;
-    height: 60%;
+    height: 70%;
     width: 85%;
     z-index: 1;
 }
-.cards .figure img, .figure-l img{
+.cards .figure img{
     object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 5px;
 }
-.cards a{
-    text-decoration: none;
-    color: #f7eded;
-}
 
 .cards figcaption p{
     opacity: .4;
 }
-.figure .play-btn i, .figure-l .play-btn i{ 
+
+.figure a:nth-child(5){
     display: none;
-    transition: all .50s ease;
 }
 
-.figure a:hover i, 
-.figure-l a:hover i {
+.figure .play-btn i{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 90px;
+    left: 100px;
     bottom: 125px;
     font-size: 48px;
     width: 50px;
     height: 50px;
-    color: #000;
-    background: rgb(102, 236, 102);
     border-radius: 50px;
-    transform: translateY(-5px);
+    color: transparent;
+    transition: .3s;
+}
 
+.figure a:hover{
+    background: #363636;
+}
+
+.figure a:hover i{   
+    color: #000;
+    background: rgb(138, 229, 138);
+    transition: .3s;
+    transform: translateY(-10px);
 }
 
 
-@media (max-width: 1329px){
-    .figure-l{
-        display: none;
-    }
-    .figure{
-        width: 21% !important;
-        height: 300px !important;
-    }
-    .figure img{
-
+@media (min-width: 1330px){
+    .figure a:nth-child(5){
+        display: inline-flex !important;
+    } 
+    .figure a{
+        width: 17% !important;
+        height: 65% !important;
     }
 }
