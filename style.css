@@ -13,7 +13,7 @@ body{
 
 .left-side{
     width: 315px;
-    height: 570px;
+    height: 600px;
     float: left ;
     margin: 10px 5px;
     overflow: hidden;
@@ -293,7 +293,7 @@ a.log-in-btn:hover{
 .right-side {
     position: absolute;
     left: 325px;
-    height: 510px;
+    height: 540px;
     overflow-y:scroll;
     overflow-x: hidden;
     border-radius: 0 0 5px 5px;
@@ -420,6 +420,83 @@ a.log-in-btn:hover{
     background: rgb(138, 229, 138);
     transition: .3s;
     transform: translateY(-10px);
+}
+
+.main-fotter{
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+
+}
+.main-fotter .links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.main-fotter .links a{
+    color: #fff;
+    opacity: .4;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.links a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+.links a.active{
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 17.5px;
+    text-decoration: none;
+    opacity: 1;
+}
+.links .l-col, .m-col, .r-col{
+    position: relative;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 70px 20px 20px;
+    width: 20%;
+}
+.btns a{
+    position: relative;
+    top: 15px;
+    right: 80px;
+    margin-left: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    background: #363636;
+}
+.btns a i{
+    font-size: 20px;
+}
+.btns a:hover{
+    background: #555;
+}
+
+hr{
+    margin: 0 3%;
+    opacity: .2;
+}
+
+h5{
+    position: relative;
+    top: 50px;
+    left: 35px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ffffff;
+    opacity: .4;
+    padding-bottom: 50px;
 }
 
 
