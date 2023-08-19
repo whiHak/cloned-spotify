@@ -27,7 +27,8 @@ body{
 }
 
 .left-side .nav-main a{
-    display:block;
+    display: flex;
+    flex-direction: row;
     font-size: 17px;
     text-decoration: none;
     color: #f7eded;
@@ -66,6 +67,8 @@ body{
     margin: 5px 0 14px 10px;
 }
 .left-elem .left-link a{  
+    display: flex;
+    align-items: center;
     font-size: 17px;
     text-decoration: none;
     color: #f7eded;
@@ -74,6 +77,7 @@ body{
     transition: .5s;
     
 }
+
 .left-elem .left-link a i{
     margin-right: 5px;
     font-size: 30px;
@@ -182,39 +186,46 @@ body{
 }
 
 .btm-links{
+    display: flex;
+    flex-wrap: wrap;
     background-color: #161515;
     align-items: flex-end;
-    padding: 28px 55px 30px 23px;
+    width: 245px;
+    height: 135px;
+    margin-left: 15px;
 
 }
 .btm-links a{
-    font-size: 10px;
+    font-size: 11px;
     text-decoration: none;
     margin: 0 10px 0 0;
     color: #f7eded;
-    opacity: 0.4;
+    opacity: 0.8;
 }
 .left-elem a.eng {
+    position: relative;
+    top: 65px;
     background-color: #191414;
     font-weight: 600;
     color: #ffffff;
     border-radius: 23px;
     text-decoration: none;
-    font-size: 14px;
-    padding: 3px 13px;   
+    font-size: 16px;
+    padding: 5px 13px;   
     border: 1px solid #f7eded;
     transition: .1s;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .left-elem .eng i{
-    font-size: 12px;
+    font-size: 15px;
+    margin-right: 5px;
 }
 .left-elem a.eng:hover {
-    padding: 3.5px 13.5px;
-    font-size: 14.5px;
+    padding: 5.5px 13.5px;
+    font-size: 16.5px;
     border: 2px solid #f7eded;
-    margin-left: 9px;
+    margin-left: 14px;
 }
 
 .top-cont{
@@ -401,7 +412,7 @@ a.log-in-btn:hover{
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 100px;
+    left: 110px;
     bottom: 125px;
     font-size: 48px;
     width: 50px;
@@ -488,7 +499,7 @@ hr{
     opacity: .2;
 }
 
-h5{
+h5 {
     position: relative;
     top: 50px;
     left: 35px;
@@ -497,6 +508,10 @@ h5{
     color: #ffffff;
     opacity: .4;
     padding-bottom: 50px;
+}
+h5 a{
+    color: #ffffff;
+    opacity: .6;
 }
 
 
