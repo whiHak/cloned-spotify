@@ -534,6 +534,67 @@ h5 a{
     color: #ffffff;
     opacity: .6;
 }
+@media (min-width: 320px){
+    .left-side{
+        display: none !important;
+    }
+    .main-page{
+        position: relative;
+        top: 70px !important;
+    }
+    .top-cont, .right-side{
+        position: absolute;
+        top: 0px !important;
+        left: 0px !important;
+        width: 100% !important;
+    }
+    .right-side{
+        height: 100% !important;
+    }
+    .figure a{
+        margin: 10px 0 10px 15px !important;
+        padding: 5px 0 !important;
+        width: 43% !important;
+        height: 42% !important;
+    }
+    .figure figure{
+        margin-left: 6px !important;
+    }
+    .card-board{
+        height: 60%;
+    }
+
+}
+
+@media (min-width: 425px){
+    .left-side{
+        display: none !important;
+    }
+    .main-page{
+        position: relative;
+        top: 70px !important;
+    }
+    .top-cont, .right-side{
+        position: absolute;
+        top: 0px !important;
+        left: 0px !important;
+        width: 100% !important;
+    }
+    .right-side{
+        height: 100% !important;
+    }
+    .figure a{
+        margin: 10px 0 10px 15px !important;
+        padding: 5px 0 !important;
+        width: 45% !important;
+        height: 50% !important;
+    }
+    .card-board{
+        height: 60%;
+    }
+
+    
+}
 
 
 @media (min-width: 768px){
