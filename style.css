@@ -13,7 +13,7 @@ body{
 
 .left-side{
     width: 315px;
-    height: 600px;
+    height: 560px;
     float: left ;
     margin: 10px 5px;
     overflow: hidden;
@@ -103,14 +103,14 @@ body{
 .scroll-cntn{
     background-color: #161515;
     padding: 8px 10px 10px 3px;
-    height: 22vh;
+    height: 18vh;
     color: #ffffff;
     border-radius: 5px 5px 2px 2px;
     overflow-y: scroll ;
 }
 
 .create-playlst{
-    background-color: #272626;
+    background-color: #242424;
     padding: 15px 0 20px 12px;
     border-radius: 5px;
 }
@@ -147,7 +147,7 @@ body{
     color: #000;
 }
 .podcast{
-    background-color: #272626;
+    background-color: #242424;
     margin-top: 25px;
     padding: 15px 0 20px 12px;
 
@@ -229,16 +229,17 @@ body{
 }
 
 .top-cont{
-    position:relative;
-    top: 10px;
+    position: absolute;
+    top: 5px;
+    left: 325px;
     margin-right: 5px;
-    /* width: 760px; */
+    width: 565px;
     height: 70px;
     display: flex;
     justify-content: space-between;
     background-color: #161515;
     border-radius: 5px 5px 0 0;
-    z-index: 0;  
+    z-index: 2;  
 }
 .top-cont .fb-btn{
     display: flex;
@@ -248,9 +249,8 @@ body{
 .fb-btn a.forward-btn, 
  a.backward-btn{
     display:inline-flex;
-    flex-wrap:wrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     text-decoration: none;
     font-size: 30px;
     font-weight: 100;
@@ -261,11 +261,14 @@ body{
     background-color: #000;
     color: #f7eded;
 }
+a.forward-btn{
+    display: none !important;
+}
 
 .account-btn{
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
+    align-items: center;
     align-content: center;
 }
 .account-btn a.sign-up-btn{
@@ -303,17 +306,19 @@ a.log-in-btn:hover{
     /* right side styles */
 .right-side {
     position: absolute;
-    left: 325px;
-    height: 540px;
+    top: 70px;
+    left: 326px;
+    height: 495px;
     overflow-y:scroll;
     overflow-x: hidden;
     border-radius: 0 0 5px 5px;
-    width: auto;
-    background: #272626;
+    width: 565px;
+    background: #242424;
 }
 
 .main-page{
     width: 100%; 
+    height: 100%;
     margin: 0 325px 5px 0;
 }
 .playlist{
@@ -324,7 +329,7 @@ a.log-in-btn:hover{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background: #272626;
+    background: #242424;
     padding-bottom: 2px;
 }
 
@@ -333,11 +338,12 @@ a.log-in-btn:hover{
     text-decoration: none;
     font-size: 11px;
     position: relative;
+    top: 10px;
     left: 25px;
 }
 .playlist .head a:nth-child(2){
     position: relative;
-    top: 8px;
+    top: 10px;
     font-size: 13px;
     right: 10px;
     color: #ffffff;
@@ -348,18 +354,22 @@ a.log-in-btn:hover{
     text-decoration:underline;
 }
 
-.card-board{
-    height: 55vh;
+.card-board {
+    height: 80%;
+}
+
+.card-board-2{
+    height: 512px;
 }
 
 .card-board .cards {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background: #272626;
+    background: #242424;
     /* overflow: hidden; */
     /* width: fit-content; */
-    height: 300px;
+    height: 100%;
     /* overflow: scroll; */
 }
 
@@ -367,6 +377,7 @@ a.log-in-btn:hover{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 100%;
 }
 .cards .figure a{
     display: inline-flex;
@@ -376,10 +387,10 @@ a.log-in-btn:hover{
     text-decoration: none;
     color: #f7eded;
     background: #161515;
-    margin: 20px 10px 20px 20px;
-    padding: 10px 0; 
-    width: 20%;
-    height: 65%;
+    margin: 20px 19px 20px 20px;
+    padding: 10px 0;
+    width: 43%;
+    height: 58%;
     border-radius: 5px;
     transition: .3s;
     overflow: hidden;
@@ -389,7 +400,7 @@ a.log-in-btn:hover{
     size: 30px;
     font-size: 13px;
     height: 70%;
-    width: 85%;
+    width: 90%;
     z-index: 1;
 }
 .cards .figure img{
@@ -403,16 +414,22 @@ a.log-in-btn:hover{
     opacity: .4;
 }
 
+.figure a:nth-child(3){
+    display: none;
+}
+.figure a:nth-child(4){
+    display: none;
+}
 .figure a:nth-child(5){
     display: none;
 }
 
 .figure .play-btn i{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 110px;
+    left: 150px;
     bottom: 125px;
     font-size: 48px;
     width: 50px;
@@ -420,6 +437,7 @@ a.log-in-btn:hover{
     border-radius: 50px;
     color: transparent;
     transition: .3s;
+    padding-left: 5px;
 }
 
 .figure a:hover{
@@ -472,10 +490,13 @@ a.log-in-btn:hover{
     margin: 20px 70px 20px 20px;
     width: 20%;
 }
+.btns{
+    display: flex;
+}
 .btns a{
     position: relative;
     top: 15px;
-    right: 80px;
+    right: 10px;
     margin-left: 10px;
     display: inline-flex;
     justify-content: center;
@@ -515,12 +536,191 @@ h5 a{
 }
 
 
-@media (min-width: 1330px){
-    .figure a:nth-child(5){
+@media (min-width: 768px){
+    .top-cont, .right-side{
+        width: 69% !important;
+    }
+    a.forward-btn{
         display: inline-flex !important;
-    } 
+    }
+    .figure a:nth-child(3){
+        display: inline-flex;
+    }
+    .figure a:nth-child(4){
+        display: inline-flex;
+    }
+    .card-board{
+        height: 55%;
+    }
     .figure a{
-        width: 17% !important;
-        height: 65% !important;
+        margin: 10px 0 10px 15px !important;
+        padding: 5px 0 !important;
+        width: 22% !important;
+        height: 36% !important;
+    }
+    .figure figure{
+        font-size: 9px !important;
+        margin-left: 8px !important;
+    }
+    .figure .play-btn i{
+        position: relative;
+        bottom: 85px;
+        left: 62%;
+        width: 35px;
+        height: 35px;
+        font-size: 40px;
+    }
+    .main-fotter .links a {
+        font-size: 14px !important;
+    }
+    .btns a{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+/* @media (min-width: 1130px){
+    .top-cont, .right-side{
+        width: 77% !important;
+    }
+} */
+@media (min-width: 1024px){
+    .card-board{
+        height: 67%;
+    }
+    .figure a{
+        margin: 10px 0 10px 15px !important;
+        padding: 5px 0 !important;
+        width: 22% !important;
+        height: 44% !important;
+    }
+    .figure figure{
+        font-size: 11px !important;
+        margin-left: 8px !important;
+    }
+    .figure .play-btn i{
+        position: relative;
+        bottom: 105px;
+        width: 45px;
+        height: 45px;
+        font-size: 45px
+    }
+    .main-fotter .links a {
+        font-size: 14px !important;
+    }
+    .btns a{
+        width: 40px;
+        height: 40px;
+    }
+
+  
+}
+
+@media (min-width: 1172px){
+    .top-cont, .right-side{
+        width: 72% !important;
+    }
+}
+@media (min-width: 1275px){
+    .top-cont, .right-side{
+        width: 74% !important;
+    }
+}
+
+@media (min-width: 1350px){
+    .top-cont, .right-side{
+        width: 75% !important;
+    }
+    .figure a{
+        margin: 10px 0 10px 15px !important;
+        padding: 5px 0 !important;
+        width: 19% !important;
+        height: 44% !important;
+    }
+}
+@media (min-width: 1410px){
+    .top-cont, .right-side{
+        width: 77% !important;
+    }
+}
+
+@media (min-width: 1440px){
+    .top-cont, .right-side{
+        width: 77% !important;
+    }
+    .figure a:nth-child(5){
+        display: inline-flex;
+    }
+    .card-board{
+        height: 67%;
+    }
+    .figure a{
+        margin: 10px 0 10px 15px !important;
+        padding: 5px 0 !important;
+        width: 18% !important;
+        height: 50% !important;
+    }
+    .figure figure{
+        font-size: 11px !important;
+        margin-left: 8px !important;
+    }
+    .figure .play-btn i{
+        position: relative;
+        bottom: 105px;
+        left: 130px;
+        width: 45px;
+        height: 45px;
+        font-size: 45px
+    }
+    .main-fotter .links a {
+        font-size: 14px !important;
+    }
+    .btns a{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (min-width: 1603px){
+    .top-cont, .right-side{
+        width: 79% !important;
+    }
+    .figure a{
+        margin: 10px 0 10px 15px !important;
+        padding: 5px 0 !important;
+        width: 18% !important;
+        height: 53% !important;
+    }
+}
+@media (min-width: 1701px){
+    .top-cont, .right-side{
+        width: 80% !important;
+    }
+    .figure a{
+        margin: 10px 0 10px 15px !important;
+        padding: 5px 0 !important;
+        width: 18% !important;
+        height: 54% !important;
+    }
+}
+@media (min-width: 2000px){
+    .top-cont, .right-side{
+        width: 84% !important;
+    }
+    .figure a{
+        margin: 10px 0 10px 15px !important;
+        padding: 5px 0 !important;
+        width: 14% !important;
+        height: 54% !important;
+    }
+}
+@media (min-width: 2560px){
+    .top-cont, .right-side{
+        width: 87% !important;
+    }
+    .figure a{
+        margin: 10px 0 10px 15px !important;
+        padding: 5px 0 !important;
+        width: 10% !important;
+        height: 53% !important;
     }
 }
