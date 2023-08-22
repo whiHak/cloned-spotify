@@ -403,12 +403,17 @@ a.log-in-btn:hover{
     height: 70%;
     width: 90%;
     z-index: 1;
+    padding: 5px;
 }
 .cards .figure img{
     object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 5px;
+}
+.cards figcaption{
+    position: relative;
+    top: 15px;
 }
 
 .cards figcaption p{
