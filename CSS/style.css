@@ -566,8 +566,9 @@ footer a{
         height: 100vh;
         width: 100vw;
         left: 0;
+        background: #161515;
     }
-    
+
     .main-page{
         position: relative;
         top: 70px !important;
