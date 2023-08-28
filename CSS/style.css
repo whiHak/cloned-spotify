@@ -20,7 +20,7 @@ body{
     overflow: hidden;
     border-radius: 5px;
     z-index: 100;
-    transition: all .55s ease;
+    transition: all .2s ease;
 }
 .left-side .nav-main{
     background-color: #161515;
@@ -271,9 +271,12 @@ a.forward-btn, a.backward-btn{
     display: none !important;
 }
 #menu-icon{
+    display: flex;
+    align-items: center;
     color: #f7eded;
     font-size: 250%;
     cursor: pointer;
+
 }
 
 .account-btn{
@@ -560,9 +563,11 @@ footer a{
         background: #242424;
     }
     .left-side.open{
-        height: 530px;
+        height: 100vh;
+        width: 100vw;
         left: 0;
     }
+    
     .main-page{
         position: relative;
         top: 70px !important;
@@ -636,7 +641,7 @@ footer a{
         height: 100%;
     }
     .right-side{
-        height: 100vh !important;
+        height: 109vh !important;
     }
     .top-cont, .right-side{
         position: absolute;
