@@ -12,12 +12,15 @@ body{
 }
 
 .left-side{
+    position: relative;
     width: 315px;
     height: 560px;
     float: left ;
     margin: 10px 5px;
     overflow: hidden;
     border-radius: 5px;
+    z-index: 100;
+    transition: all .55s ease;
 }
 .left-side .nav-main{
     background-color: #161515;
@@ -227,9 +230,9 @@ body{
     border: 2px solid #f7eded;
     margin-left: 14px;
 }
-.left-side{
+/* .left-side{
     display: none;
-}
+} */
 
 .top-cont{
     position: absolute;
@@ -264,8 +267,13 @@ body{
     background-color: #000;
     color: #f7eded;
 }
-a.forward-btn{
+a.forward-btn, a.backward-btn{
     display: none !important;
+}
+#menu-icon{
+    color: #f7eded;
+    font-size: 250%;
+    cursor: pointer;
 }
 
 .account-btn{
@@ -368,8 +376,8 @@ a.log-in-btn:hover{
     background: #242424;
     position: relative;
     top: 10px;
-    /* overflow: hidden; */
-    /* width: fit-content; */
+    overflow: hidden;
+    width: 100%;
     height: 100%;
     /* overflow: scroll; */
 }
@@ -379,6 +387,7 @@ a.log-in-btn:hover{
     /* flex-wrap: wrap; */
     width: 100%;
     height: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 .cards .figure a{
     display: inline-flex;
@@ -396,6 +405,9 @@ a.log-in-btn:hover{
     transition: .3s;
     overflow: hidden;
 }
+/* .cards[data-slide="${n}"] .figure{
+    transform: translateX(-${(n-1) * 100}%);
+} */
 .cards .figure figure{ 
     margin-left: 15px;
     size: 30px;
@@ -526,7 +538,7 @@ hr{
     opacity: .2;
 }
 
-h5 {
+footer {
     position: relative;
     top: 50px;
     left: 35px;
@@ -536,11 +548,21 @@ h5 {
     opacity: .4;
     padding-bottom: 50px;
 }
-h5 a{
+footer a{
     color: #ffffff;
     opacity: .6;
 }
 @media (min-width: 320px){
+    .left-side{
+        position: relative;
+        top: 65px;
+        left: -100%;
+        background: #242424;
+    }
+    .left-side.open{
+        height: 530px;
+        left: 0;
+    }
     .main-page{
         position: relative;
         top: 70px !important;
@@ -606,11 +628,15 @@ h5 a{
 
 @media (min-width: 768px){
     .left-side{
+        position: relative;
+        top: 100%;
+        left: 0;
+        background: transparent;
         display:  block !important;
         height: 100%;
     }
     .right-side{
-        height: 110% !important;
+        height: 100vh !important;
     }
     .top-cont, .right-side{
         position: absolute;
@@ -618,8 +644,11 @@ h5 a{
         left: 326px !important;
         width: 68% !important;
     }
-    a.forward-btn{
+    a.forward-btn, a.backward-btn{
         display: inline-flex !important;
+    }
+    #menu-icon{
+        display: none;
     }
     .figure a:nth-child(3){
         display: inline-flex;
