@@ -563,7 +563,8 @@ footer a{
         background: #242424;
     }
     .left-side.open{
-        height: 530vh;
+        height: 100vh;
+        width: 100vw;
         left: 0;
     }
     .main-page{
